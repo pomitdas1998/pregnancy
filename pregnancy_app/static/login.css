@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    font-smooth: antialiased;
+  }
+  
+  body {
+   background-image: url(img/pp.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .login-form {
+    opacity: 0.9;
+    background: #fac4b8;
+    width: 400px;
+    margin: 150px auto;
+    display: box;
+    box-orient: vertical;
+    box-direction: normal;
+    flex-direction: column;
+    border-radius: 50px;
+    box-shadow: 50px 20px 25px rgba(0, 0, 0, 0.2);
+  }
+  .login-form h1 {
+    padding: 35px 35px 0 162px;
+    color: #fff;
+    font-weight: 300;
+  }
+  .login-form .content {
+    padding: 35px;
+    text-align: center;
+  }
+  .login-form .input-field {
+    padding: 10px 5px;
+  }
+  .login-form .input-field input {
+    font-size: 15px;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    padding: 10px 1px;
+    border: 0;
+    border-bottom: 3px solid #747474;
+    outline: none;
+    transition: all .5s;
+    transition: all .5s;
+  }
+  .login-form .input-field input::input-placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input::placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input:input-placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input::input-placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input::placeholder {
+    text-transform: uppercase;
+  }
+  .login-form .input-field input:focus {
+    border-color: #222;
+  }
+  .login-form a.link {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .login-form .action {
+    display: box;
+    display: flex;
+    box-orient: horizontal;
+    box-direction: normal;
+    flex-direction: row;
+  }
+  .login-form .action button {
+    width: 100%;
+    border: none;
+    padding: 18px;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #e8e9ec;
+    color: #777;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 0;
+    letter-spacing: 0.2px;
+    outline: 0;
+    transition: all .3s;
+    transition: all .3s;
+  }
+  /* .login-form .action button a{
+    text-decoration: none;
+  } */
+
+  .login-form .action button:hover {
+    background: #fac4b8;
+  }
+  .login-form .action button:nth-child(2) {
+    background: #2d3b55;
+    color: #fff;
+  
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 50px;
+  }
+  .login-form .action button:nth-child(2):hover {
+    background: #fac4b8;
+  }

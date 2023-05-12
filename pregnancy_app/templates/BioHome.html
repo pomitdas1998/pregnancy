@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'BioHome.css'%}">
+
+	<link rel="icon" type="image/jpeg" href="img/preg.png">
+    <link rel="stylesheet" type="text/css" href="BioHome.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>Guide And Care</title>
+    
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+    </form>
+	<!-- HEAD OF THE BODY -->
+    
+
+
+
+	<header id="body-header" style="background-image:url('{% static 'img/home.jpg'%}')">
+
+		<!-- <nav>
+			<ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <a href="#"> Home </a>
+                </li>
+                <li>
+                    <a href="#about"> About </a>
+                </li>
+                <li>
+                    <a href="#Read More"> Read More </a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="Bio1.html" target="_blank">Sign Up</a>
+                </li>
+                <li>
+                    <a href="Bio.html" target="_blank">LogIn</a>
+                </li>
+            </ul>
+
+            <div id="name-social-container">
+            <div class="text-center">
+                <h1 id="my-name">Dr. Arika Saini</h1>
+            </div>
+
+        </div>
+        </nav> -->
+
+    </header>
+
+
+
+    <!-- ABOUT YOURSELF -->
+
+
+
+    <section id="about">
+            <div id="my-image">
+                <img  src="{% static 'img/arika.jpg'%}" >
+            </div>
+
+            <div id="about-para">
+
+                <p>
+                   I am a dedicated, organized and methodical individual. I have good interpersonal skills, am an excellent team worker and am keen and very       <span class="text-highlight">willing to learn and develop new skills.</span> I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. <span class="text-highlight">I have an active and dynamic approach to work and getting things done. </span>I am determined and decisive. I identify and develop opportunities.
+                   
+                </p>
+
+            </div>
+
+    </section>
+
+
+
+    <!-- Contact -->
+
+
+
+    <main>
+
+        <section id="contact">
+            <h1 class="section-heading mb50px">
+                <span>
+                    <img src="{% static 'img\contact.png' %}" >
+                </span>
+                <span> Contact </span>
+            </h1>
+            <div id="contact-container">
+
+                <div id="contact-form-container">
+                    <form id="contact-form">
+                        <input id="input-name" name="name" type="text" placeholder="Your Name">
+                        <input id="input-email" name="input-email" type="text" required="" placeholder="Your Email">
+                        <textarea id="input-message" name="input-message" rows="2" cols="40" placeholder="Message"></textarea>
+                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+                <div id="my-details-container">
+
+                    <h3> Get In touch </h3>
+                    <p class="link"> My Mail -<a href="Sachinola01@gmail.com" target="_blank"> arikasaini@gmail.com</a></p>
+
+                    <h3> My Address </h3>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Opposite Hanuman Temple,</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-mobile-alt">Delhi , India</i>
+                        <span></span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="far fa-envelope"></i>
+                        <span>110035</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center social-icons">
+
+                <ul class="horizontal-list">
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/manisha-khattar-b5663641/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://stackoverflow.com/users/5608414/manisha?tab=profile" target="_blank">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://plus.google.com/u/0/103030702784925512939" target="_blank">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/manishakhattar54">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.quora.com/profile/Manisha-Khattar" target="_blank">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

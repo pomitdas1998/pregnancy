@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/jpeg" href="img\preg.png">
+  <meta charset="UTF-8">
+  <title>GUIDENCE FOR PREGNENT WOMEN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'login.css'%}">
+
+</head>
+
+<body style="background-image:url('{% static 'img/pp.jpg'%}')">
+  <form action="" method="POST">
+    {% csrf_token %}
+  <div class="login-form">
+    <form>
+      <h1 style="margin:-32px; padding: 46px 41px 30px 96px;">Login Page</h1>
+      <div class="content">
+        <div class="input-field">
+          <input type="username" placeholder= "User Name" name="username">
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Password" name="password">
+        </div>
+        <a href="#" class="link">Forgot Your Password?</a>
+      </div>
+      <div class="action">
+        {% comment %} <button type="submit" >Register</button> {% endcomment %}
+        <button><a href="{% url "signup" %}" class= 'btn btn-primary'>Register</a></button>
+        <button type=submit>Login</button>
+      </div>
+    </form>
+  </div>
+  <!-- partial -->
+
+
+
+
+</body>
+
+</html>

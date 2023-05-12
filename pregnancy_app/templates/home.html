@@ -1,0 +1,680 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .nav-link{ 
+            color:white;
+        }
+
+        .wte-landing-hero-v3 {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            background-image: url(//images.agoramedia.com/wte3.0/gcms/redesign/landing-hero-xs-optimized.jpg);
+            background-size: cover;
+        }
+        .wte-landing-hero-v3__c {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 30px 25px 0 25px;
+        }
+
+        .wte-landing-hero-v3__c__title {
+            font-family: "Montserrat",Arial,Helvetica,sans-serif;
+            font-size: 1.75rem;
+            color: #fff;
+            font-weight: 700;
+            line-height: 1.14;
+        }
+        .wte-landing-hero-v3__c__description {
+            font-family: "Open Sans",Arial,Helvetica,sans-serif;
+            font-size: 1rem;
+            color: #fff;
+            font-weight: 400;
+            line-height: 1.44;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .wte-landing-hero-v3__img-c {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            height:210px;
+        }
+        {% comment %} Pregnancy Tools & Resources {% endcomment %}
+        article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+            display: block;
+        } 
+
+        section {
+            display: block;
+        }
+
+        .flash-cards-container {
+            position: relative;
+            margin: 0 0 2rem 0;
+            height: 510px;
+        }
+        .flash-cards-container .headline {
+            font: normal 2.8em "Montserrat";
+            letter-spacing: -1.2px;
+            text-align: center;
+            padding: 1.2em;
+        }
+        .flash-cards-container .cards {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        {% comment %} Pregnancy Topics {% endcomment %}
+        article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+            display: block;
+        }
+
+        .wte-landing-section {
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#f3f3f3),color-stop(5%,#fefefe),to(#fff));
+            background-image: linear-gradient(to bottom,#f3f3f3,#fefefe 5%,#fff);
+            padding-bottom: 50px;
+        }
+        h2 {
+            font-family: "Montserrat",Arial,Helvetica,sans-serif;
+            font-size: 1.25em;
+            color: #333;
+            font-weight: 700;
+            line-height: 1.2em;
+            letter-spacing: normal;
+            margin: 1.5rem 0 1rem 0;
+        }
+        .wte-landing-section-title {
+            font-family: "Montserrat",Arial,Helvetica,sans-serif;
+            font-size: 1.5rem;
+            color: #333;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: -.8px;
+            text-align: center;
+            margin: 0;
+            padding: 50px 0 33px 0;
+        }
+        .row {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .p-0 {
+            padding: 0 !important;
+        }
+        .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        div {
+            display: block;
+        }
+        .wte-site-section-card:first-child {
+            border-top: solid 1px #d5dedf;
+        }
+        .wte-site-section-card {
+            background-color: #fff;
+            background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(rgba(255,255,255,0)));
+            background-image: linear-gradient(to right, #fff, rgba(255,255,255,0));
+            border-bottom: solid 1px #d5dedf;
+        }
+        .wte-site-section-card__c {
+            overflow: hidden;
+        }
+        .d-flex {
+            display: -webkit-box !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+        }
+        .justify-content-between {
+            -webkit-box-pack: justify !important;
+            -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+        }
+        .wte-site-section-card__c__body {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            padding: 1.5em 1.5em 1em;
+            z-index: 500;
+        }
+        .wte-site-section-card__c__body__title {
+            font-family: "Montserrat",Arial,Helvetica,sans-serif;
+            font-size: 1.25rem;
+            color: #741cdb;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -.4px;
+            margin-right: -100%;
+        }
+        .wte-site-section-card__c__body__description {
+            font-family: "Montserrat",Arial,Helvetica,sans-serif;
+            font-size: 1rem;
+            color: #333;
+            font-weight: 400;
+            line-height: 1.38;
+            letter-spacing: -.3px;
+            margin: 6px -100% 0 0;
+        }
+        .wte-site-section-card__c__body__links {
+            margin: 15px -30% 25px 0;
+        }
+        .wte-site-section-card__c__body__links__link {
+            font-family: "Open Sans",Arial,Helvetica,sans-serif;
+            font-size: 1rem;
+            color: #333;
+            font-weight: normal;
+            line-height: 1.45;
+            letter-spacing: -.4px;
+            display: block;
+            margin-bottom: 10px;
+            padding-right: 18px;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent;
+        }
+        .wte-site-section-card__c__body__links__more {
+            background: #1dafae;
+            font-family: "Montserrat",Arial,Helvetica,sans-serif;
+            font-size: .75em;
+            color: #fff;
+            font-weight: 700;
+            line-height: 1em;
+            letter-spacing: -.2px;
+            border-radius: 35px;
+            text-align: center;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            padding: 10px 20px;
+            margin: 0.5em 0;
+        }
+        button, .btn {
+            border: 0;
+            background-color: transparent;
+        }
+        .wte-site-section-card__c__img-c {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            z-index: 400;
+        }
+        .wte-site-section-card {
+            background-color: #fff;
+            background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(rgba(255,255,255,0)));
+            background-image: linear-gradient(to right, #fff, rgba(255,255,255,0));
+            border-bottom: solid 1px #d5dedf;
+        }
+        .wte-site-section-card__c {
+            overflow: hidden;
+        }
+        .d-flex {
+            display: -webkit-box !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+        }
+        .right-rail-promo {
+            margin: 30px;
+        }
+        .right-rail-promo__c {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin: auto;
+            -webkit-box-shadow: 0 3px 10px 0 rgba(181,181,181,0.5);
+            box-shadow: 0 3px 10px 0 rgba(181,181,181,0.5);
+            border: solid 1px #d9ddde;
+        }
+        .right-rail-promo__c__body {
+            background-color: #fff;
+            border-radius: 0 0 5px 5px;
+        }
+        .right-rail-promo__c__body__title {
+            font-family: "Montserrat",Arial,Helvetica,sans-serif;
+            font-size: 1rem;
+            color: #28a390;
+            font-weight: 700;
+            line-height: 1.08;
+            letter-spacing: -.26px;
+            padding: 17px 22px;
+            background-color: #f6f6f6;
+            border-bottom: 1px solid #d5dedf;
+        }
+        .right-rail-promo__c {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin: auto;
+            -webkit-box-shadow: 0 3px 10px 0 rgba(181,181,181,0.5);
+            box-shadow: 0 3px 10px 0 rgba(181,181,181,0.5);
+            border: solid 1px #d9ddde;
+        }
+        .right-rail-promo__c__body__links__link {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: 17px 0;
+            margin: 0 20px;
+            border-bottom: 1px solid #dee5e2;
+        }
+        .right-rail-promo__c__body__links__link:last-child {
+            border-bottom: 0;
+        }
+
+
+        .content {
+            padding: 16px;
+          }
+          
+          .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+          }
+          
+          .sticky + .content {
+            padding-top: 60px;
+          }
+       
+    </style>
+  </head>
+  <body>
+
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style='background-color: #159b82;'>
+
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color:#495057;" href="#">Pregnancy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'Biohome' %}">About</a>
+              </li>
+              {% comment %} <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> {% endcomment %}
+
+              <li class="nav-item mb-2">
+                <a class="nav-link active" style="margin-left:130vh; " aria-current="page" href="{% url "login" %}">Login</a>          
+              </li>
+
+              <li class="nav-item mb-2">
+                <a class="nav-link active"  aria-current="page" href="signup">Signin</a>          
+              </li>
+            </ul>
+            {% comment %} <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> {% endcomment %}
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <section class="wte-landing-hero-v3"><div class="wte-landing-hero-v3__c"><h1 class="wte-landing-hero-v3__c__title">Pregnancy</h1><p class="wte-landing-hero-v3__c__description">Congratulations, and welcome to your pregnancy! From what to expect each week to how to prepare for labor and beyond, here's the info you need.</p></div><div class="wte-landing-hero-v3__img-c"><img class="wte-landing-hero-v3__img-c__img" width="385" height="282" src="//images.agoramedia.com/wte3.0/gcms/landing-2021-pregnancy.png" alt="Pregnancy Landing"></div></section>
+     
+      <div>
+      <section class="wte-landing-tools" style="margin-left:150px;">
+        <div class="flash-cards-container">
+            <div class="headline">Pregnancy Tools &amp; Resources</div>
+            <div class="cards animatedParent animateOnce" >
+                <div class="card animated fadeInUp delay-0 go">
+                    <a class="card__link" href="#"><div class="card__image__container">
+                        <div class="card__image">
+                            <img src="//images.agoramedia.com/wte3.0/gcms/understand-common-pregnancy-issues-tools-article.jpg" style = "padding-left:51px;" alt="Pregnancy Symptoms">
+                        </div>
+                    </div>
+                    <div class="card__title">
+                        <h3 style="font-size: calc(0.9rem + .3vw);">Understand Common Pregnancy Symptoms</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="card animated fadeInUp delay-1 go" style="margin:0px 20px 0px 15px;">
+                <a class="card__link" href="#">
+                    <div class="card__image__container">
+                        <div class="card__image">
+                            <img src="//images.agoramedia.com/wte3.0/gcms/due-date-calculator-2020-promo-600x600.jpg" style ="height: 314px" alt="Pregnancy Due Date Calculator"></div>
+                        </div>
+                        <div class="card__title">
+                            <h3 style="font-size: calc(0.9rem + .3vw);" >Calculate Your Due Date</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="card animated fadeInUp delay-2 go">
+                    <a class="card__link" href="#">
+                        <div class="card__image__container">
+                            <div class="card__image">
+                                <img src="//images.agoramedia.com/wte3.0/gcms/Signs-and-Symptoms-of-Labor-article.jpg" alt="Labor Signs">
+                            </div>
+                        </div>
+                        <div class="card__title">
+                            <h3 style="font-size: calc(0.9rem + .3vw);" >Signs of Labor</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="wte-landing-section">
+        <div class="container-fluid full-width-container-fluid">
+            <h2 class="wte-landing-section-title"> Pregnancy Topics </h2>
+            <div class="row mx-lg-1"><div class="col-xs-12 col-lg-8 p-0">
+                <div class="wte-site-section-cards"><div class="wte-site-section-card">
+                    <div class="wte-site-section-card__c d-flex justify-content-between">
+                        <div class="wte-site-section-card__c__body">
+                            <div class="wte-site-section-card__c__body__title">
+                                <a class="wte-site-section-card__c__body__title__link" href="#">Your Baby</a>
+                            </div>
+                            <div class="wte-site-section-card__c__body__description">Here's what you need to know about your baby's development and more throughout your pregnancy.</div>
+                                <div class="wte-site-section-card__c__body__links">
+                                    <a class="wte-site-section-card__c__body__links__link" href="#" title="Fetal Development" data-ga-topic="Your Baby">Fetal Development</a>
+                                     <a class="wte-site-section-card__c__body__links__link" href="#" title="Your Pregnancy Week by Week" data-ga-topic="Your Baby">Your Pregnancy Week by Week</a>
+                                      <a class="wte-site-section-card__c__body__links__link" href="#" title="Twins &amp; More" data-ga-topic="Your Baby">Twins &amp; More</a>
+                                       <a class="wte-site-section-card__c__body__links__link" href="#" title="Cord Blood Banking" data-ga-topic="Your Baby">Cord Blood Banking</a>
+                                        <a class="btn wte-site-section-card__c__body__links__more" href="#">More</a>
+                                    </div>
+                                </div>
+                                <div class="wte-site-section-card__c__img-c">
+                                    <img class="wte-site-section-card__c__img-c__img __lazy-load" src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Baby-Basics.jpg" data-src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Baby-Basics.jpg" alt="Your Baby"></div>
+                                </div>
+                            </div>
+                            <div class="wte-site-section-card">
+                                <div class="wte-site-section-card__c d-flex justify-content-between">
+                                    <div class="wte-site-section-card__c__body">
+                                        <div class="wte-site-section-card__c__body__title">
+                                            <span>Your Body</span>
+                                        </div>
+                                        <div class="wte-site-section-card__c__body__description">From the first trimester to delivery, this is what you'll want to know about every symptom and change your body may go through, and what (if anything) you can do about it.</div>
+                                        <div class="wte-site-section-card__c__body__links">
+                                            <a class="wte-site-section-card__c__body__links__link" href="#" title="Early Signs of Pregnancy" data-ga-topic="Your Body">Early Signs of Pregnancy</a> 
+                                            <a class="wte-site-section-card__c__body__links__link" href="#" title="Pregnancy Week by Week" data-ga-topic="Your Body">Pregnancy Week by Week</a> 
+                                            <a class="wte-site-section-card__c__body__links__link" href="#" title="Rib Pain During Pregnancy" data-ga-topic="Your Body">Rib Pain During Pregnancy</a>
+                                             <a class="wte-site-section-card__c__body__links__link" href="#" title="Pregnancy Symptoms" data-ga-topic="Your Body">Pregnancy Symptoms</a> 
+                                             <a class="wte-site-section-card__c__body__links__link" href="#" title="Pregnancy Sleep" data-ga-topic="Your Body">Pregnancy Sleep</a> 
+                                             <a class="wte-site-section-card__c__body__links__link" href="#" title="Labor &amp; Delivery" data-ga-topic="Your Body">Labor &amp; Delivery</a> 
+                                             <a class="wte-site-section-card__c__body__links__link" href="#" title="Birth Stories" data-ga-topic="Your Body">Birth Stories</a>
+                                            </div>
+                                        </div>
+                                        <div class="wte-site-section-card__c__img-c">
+                                            <img class="wte-site-section-card__c__img-c__img __lazy-load" src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Your-Body.jpg" data-src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Your-Body.jpg" alt="Your Body During Pregnancy">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wte-site-section-card">
+                                    <div class="wte-site-section-card__c d-flex justify-content-between">
+                                        <div class="wte-site-section-card__c__body">
+                                        <div class="wte-site-section-card__c__body__title">
+                                            <a class="wte-site-section-card__c__body__title__link" href="#">Health &amp; Safety</a>
+                                        </div>
+                                        <div class="wte-site-section-card__c__body__description">All you need to know about staying healthy and safe while you're pregnant.</div>
+                                        <div class="wte-site-section-card__c__body__links">
+                                            <a class="wte-site-section-card__c__body__links__link" href="#" title="Pregnancy Health" data-ga-topic="Health &amp; Safety">Pregnancy Health</a>
+                                             <a class="wte-site-section-card__c__body__links__link" href="#" title="Tests &amp; Screenings" data-ga-topic="Health &amp; Safety">Tests &amp; Screenings</a> <a class="wte-site-section-card__c__body__links__link" href="#" title="How Much Weight to Gain" data-ga-topic="Health &amp; Safety">How Much Weight to Gain</a> 
+                                             <a class="wte-site-section-card__c__body__links__link" href="#" title="Vaccines You Need" data-ga-topic="Health &amp; Safety">Vaccines You Need</a> 
+                                             <a class="wte-site-section-card__c__body__links__link" href="#" title="Medications That Are Safe" data-ga-topic="Health &amp; Safety">Medications That Are Safe</a>
+                                              <a class="btn wte-site-section-card__c__body__links__more" href="#">More</a>
+                                            </div>
+                                        </div>
+                                        <div class="wte-site-section-card__c__img-c">
+                                            <img class="wte-site-section-card__c__img-c__img __lazy-load" src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Health-Safety.jpg" data-src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Health-Safety.jpg" alt="Pregnancy Health and Safety">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wte-site-section-card">
+                                    <div class="wte-site-section-card__c d-flex justify-content-between">
+                                        <div class="wte-site-section-card__c__body">
+                                            <div class="wte-site-section-card__c__body__title">
+                                                <span>Diet &amp; Fitness</span>
+                                            </div>
+                                            <div class="wte-site-section-card__c__body__description">
+                                                From what nutrients you need each week to what exercises are safe, these will help you eat well and stay fit during your pregnancy.                                              
+                                            </div>
+                                            <div class="wte-site-section-card__c__body__links">
+                                                <a class="wte-site-section-card__c__body__links__link" href="#" title="Pregnancy Diet: The Best and Worst Foods for Pregnant Women" data-ga-topic="Diet &amp; Fitness">Pregnancy Diet: The Best and Worst Foods for Pregnant Women</a>
+                                                 <a class="wte-site-section-card__c__body__links__link" href="#" title="Pregnancy Fitness" data-ga-topic="Diet &amp; Fitness">Pregnancy Fitness</a>
+                                                  <a class="wte-site-section-card__c__body__links__link" href="#" title="Pregnancy Nutrients" data-ga-topic="Diet &amp; Fitness">Pregnancy Nutrients</a>
+                                                   <a class="wte-site-section-card__c__body__links__link" href="#" title="Healthy Eating During Pregnancy" data-ga-topic="Diet &amp; Fitness">Healthy Eating During Pregnancy</a> 
+                                                   <a class="wte-site-section-card__c__body__links__link" href="#" title="Appetite Loss During Pregnancy" data-ga-topic="Diet &amp; Fitness">Appetite Loss During Pregnancy</a>
+                                                    <a class="wte-site-section-card__c__body__links__link" href="#" title="Foods to Avoid During Pregnancy" data-ga-topic="Diet &amp; Fitness">Foods to Avoid During Pregnancy</a>
+                                                     <a class="wte-site-section-card__c__body__links__link" href="#" title="The Best Exercises for Pregnant Women" data-ga-topic="Diet &amp; Fitness">The Best Exercises for Pregnant Women</a>
+                                                    <a class="wte-site-section-card__c__body__links__link" href="#" title="Exercises to Avoid During Pregnancy" data-ga-topic="Diet &amp; Fitness">Exercises to Avoid During Pregnancy</a>
+                                                    </div>
+                                                </div>
+                                                <div class="wte-site-section-card__c__img-c">
+                                                    <img class="wte-site-section-card__c__img-c__img __lazy-load" src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Diet-Fitness.jpg" data-src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Diet-Fitness.jpg" alt="Pregnancy Diet and Fitness">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wte-site-section-card">
+                                            <div class="wte-site-section-card__c d-flex justify-content-between">
+                                                <div class="wte-site-section-card__c__body">
+                                                    <div class="wte-site-section-card__c__body__title">
+                                                        <a class="wte-site-section-card__c__body__title__link" href="#">Preparing for Baby</a>
+                                                    </div><div class="wte-site-section-card__c__body__description">From how to choose the perfect baby name to crafting your registry, here's the help you need to get ready for baby.</div>
+                                                    <div class="wte-site-section-card__c__body__links">
+                                                        <a class="wte-site-section-card__c__body__links__link" href="#" title="Baby Names" data-ga-topic="Preparing for Baby">Baby Names</a>
+                                                         <a class="wte-site-section-card__c__body__links__link" href="#" title="Baby Prep" data-ga-topic="Preparing for Baby">Baby Prep</a> 
+                                                         <a class="wte-site-section-card__c__body__links__link" href="#" title="Baby Registry" data-ga-topic="Preparing for Baby">Baby Registry</a>
+                                                          <a class="wte-site-section-card__c__body__links__link" href="#" title="Baby Shower" data-ga-topic="Preparing for Baby">Baby Shower</a> 
+                                                          <a class="wte-site-section-card__c__body__links__link" href="#" title="Setting Up the Nursery" data-ga-topic="Preparing for Baby">Setting Up the Nursery</a>
+                                                           <a class="wte-site-section-card__c__body__links__link" href="#" title="Chinese Gender Predictor" data-ga-topic="Preparing for Baby">Chinese Gender Predictor</a>
+                                                            <a class="btn wte-site-section-card__c__body__links__more" href="#">More</a></div></div><div class="wte-site-section-card__c__img-c">
+                                                                <img class="wte-site-section-card__c__img-c__img __lazy-load" src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Preparing-for-Baby.jpg" data-src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Preparing-for-Baby.jpg" alt="Preparing for Baby During Pregnancy">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wte-site-section-card">
+                                                        <div class="wte-site-section-card__c d-flex justify-content-between">
+                                                            <div class="wte-site-section-card__c__body">
+                                                                <div class="wte-site-section-card__c__body__title">
+                                                                    <span>Your Life</span>
+                                                                </div>
+                                                                <div class="wte-site-section-card__c__body__description">From maternity fashion to mood swings, here's what to expect about this big change in your life and how to handle it.</div>
+                                                                <div class="wte-site-section-card__c__body__links">
+                                                                    <a class="wte-site-section-card__c__body__links__link" href="#" title="Emotional Life" data-ga-topic="Your Life">Emotional Life</a>
+                                                                     <a class="wte-site-section-card__c__body__links__link" href="#" title="Work &amp; Career" data-ga-topic="Your Life">Work &amp; Career</a>
+                                                                      <a class="wte-site-section-card__c__body__links__link" href="#" title="Beauty &amp; Fashion" data-ga-topic="Your Life">Beauty &amp; Fashion</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="wte-site-section-card__c__img-c">
+                                                                    <img class="wte-site-section-card__c__img-c__img __lazy-load" src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Your-Life.jpg" data-src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Your-Life.jpg" alt="Your Life During Pregnancy">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="wte-site-section-card">
+                                                            <div class="wte-site-section-card__c d-flex justify-content-between">
+                                                                <div class="wte-site-section-card__c__body">
+                                                                    <div class="wte-site-section-card__c__body__title">
+                                                                        <a class="wte-site-section-card__c__body__title__link" href="#">Sex &amp; Relationships</a>
+                                                                    </div>
+                                                                    <div class="wte-site-section-card__c__body__description">Now that you're pregnant, your relationship with your partner will likely change. Here's what you can expect.</div>
+                                                                    <div class="wte-site-section-card__c__body__links">
+                                                                        <a class="wte-site-section-card__c__body__links__link" href="#" title="Pregnancy for Expecting Partners" data-ga-topic="Sex &amp; Relationships">Pregnancy for Expecting Partners</a>
+                                                                         <a class="wte-site-section-card__c__body__links__link" href="#" title="Benefits of Sex During Pregnancy" data-ga-topic="Sex &amp; Relationships">Benefits of Sex During Pregnancy</a>
+                                                                          <a class="wte-site-section-card__c__body__links__link" href="#" title="Best Pregnancy Sex Positions" data-ga-topic="Sex &amp; Relationships">Best Pregnancy Sex Positions</a>
+                                                                           <a class="wte-site-section-card__c__body__links__link" href="#" title="Nurturing Your Relationship During Pregnancy" data-ga-topic="Sex &amp; Relationships">Nurturing Your Relationship During Pregnancy</a>
+                                                                            <a class="btn wte-site-section-card__c__body__links__more" href="#">More</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="wte-site-section-card__c__img-c">
+                                                                        <img class="wte-site-section-card__c__img-c__img __lazy-load" src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Relationships.jpg" data-src="//images.agoramedia.com/wte3.0/gcms/redesign/Landing_Pregnancy_Relationships.jpg" alt="Relationships During Pregnancy">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="wte-site-section-card">
+                                                                <div class="wte-site-section-card__c d-flex justify-content-between">
+                                                                    <div class="wte-site-section-card__c__body">
+                                                                        <div class="wte-site-section-card__c__body__title">
+                                                                            <a class="wte-site-section-card__c__body__title__link" href="#">Community Groups</a>
+                                                                        </div>
+                                                                        <div class="wte-site-section-card__c__body__description">Join our community for baby name ideas, due date discussions, local birth and parent community groups, and more!</div>
+                                                                        <div class="wte-site-section-card__c__body__links">
+                                                                            <a class="wte-site-section-card__c__body__links__link" href="#" title="Birth Month Groups" data-ga-topic="Community Groups">Birth Month Groups</a>
+                                                                             <a class="wte-site-section-card__c__body__links__link" href="#" title="US Local Groups" data-ga-topic="Community Groups">US Local Groups</a> 
+                                                                             <a class="wte-site-section-card__c__body__links__link" href="#" title="Featured &amp; Popular" data-ga-topic="Community Groups">Featured &amp; Popular</a>
+                                                                              <a class="wte-site-section-card__c__body__links__link" href="#" title="Baby Names" data-ga-topic="Community Groups">Baby Names</a>
+                                                                               <a class="btn wte-site-section-card__c__body__links__more" href="#">More</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="wte-site-section-card__c__img-c">
+                                                                            <img class="wte-site-section-card__c__img-c__img __lazy-load" src="//images.agoramedia.com/wte3.0/gcms/redesign/Community_Pregnancy.jpg" data-src="//images.agoramedia.com/wte3.0/gcms/redesign/Community_Pregnancy.jpg" alt="pregnancy groups">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right col-xs-12 col-lg-4 sidebar-section d-flex flex-column">
+                                                            <div class="jw-video-player-wrapper wbw-video wte-section" data-autostart="False" data-video-id="Xz6fpXDd" data-placement="right-rail"><div id="jw-video-player-Xz6fpXDd" class="jw-player">
+
+                                                            </div>
+                                                            <div class="wbw-video__info d-flex justify-content-center">
+                                                                <span id="video-title" class="wbw-video__info__title text-center"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ad-container right-rail-ad right-rail-ad-1 justify-content-center js-stickybit-parent">
+                                                            <div id="gptAd2" class="fast-ads right-rail-ads" data-inview="True" data-disabled="False" data-adhesive="True" style="top: 80px; position: sticky;">
+                                                            </div>
+                                                        </div>
+                                                        <section class="right-rail-promo" data-tracking-location="right rail"><div class="right-rail-promo__c">
+                                                            <div class="right-rail-promo__c__body"><div class="right-rail-promo__c__body__title">Pregnancy By Trimester</div><div class="right-rail-promo__c__body__links">
+                                                                <a class="right-rail-promo__c__body__links__link" href="#" title="First Trimester"> 
+                                                                    <span class="right-rail-promo__c__body__links__link__text">First Trimester</span> <span class="right-rail-promo__c__body__links__link__circle"> 
+                                                                        <svg class="right-rail-promo__c__body__links__link__circle__arrow">
+                                                                            <use xlink:href="#right-arrow"></use>
+                                                                        </svg>
+                                                                     </span>
+                                                                     </a> 
+                                                                     <a class="right-rail-promo__c__body__links__link" href="#" title="Second Trimester"> 
+                                                                        <span class="right-rail-promo__c__body__links__link__text">Second Trimester</span>
+                                                                         <span class="right-rail-promo__c__body__links__link__circle"> 
+                                                                            <svg class="right-rail-promo__c__body__links__link__circle__arrow">  
+                                                                                <use xlink:href="#right-arrow">
+                                                                                </use>
+                                                                            </svg> 
+                                                                            </span>
+                                                                             </a>
+                                                                                 <a class="right-rail-promo__c__body__links__link" href="#" title="Third Trimester"> 
+                                                                                    <span class="right-rail-promo__c__body__links__link__text">Third Trimester</span>
+                                                                                     <span class="right-rail-promo__c__body__links__link__circle">
+                                                                                         <svg class="right-rail-promo__c__body__links__link__circle__arrow">
+                                                                                            <use xlink:href="#right-arrow"></use>
+                                                                                        </svg>
+                                                                                     </span>
+                                                                                     </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                        <div class="ad-container right-rail-ad right-rail-ad-2 justify-content-center js-stickybit-parent">
+                                                                            <div id="gptAd3" class="fast-ads right-rail-ads" data-inview="True" data-disabled="False" data-adhesive="True" style="top: 80px; position: sticky;">
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+
+            <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+  </body>
+</html>
